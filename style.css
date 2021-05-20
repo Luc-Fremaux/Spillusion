@@ -1,0 +1,154 @@
+body{
+    background: linear-gradient(60deg,lightgrey,green); /* Fond d'écran dégradé avec un angle de 60 degré pour tout le body*/
+    font-family: 'Akaya Telivigala','Raleway','Open Sans', sans-serif; /* Apport des Polices Google Fronts*/
+    font-size: 1.4rem;
+    line-height: 1.5em; 
+    color: red; /* Couleur du texte rouge*/
+    margin: 0; /* Marge */
+    z-index: 1; /* Détermine l'ordre des couches qui se chevauchent, ici 1 = couche la plus basse */
+}
+
+header
+{
+    font-family: 'Raleway', sans-serif; /* Apport des Polices Google Fronts*/
+    position: absolute; /* Le header va rester fixe lorsque l'on baisse la page, c'est à dire qu'il va rester en haut de page constamment*/
+    background-color: white; /* Fond d'écran blanc pour le header uniquement*/
+
+    position: sticky; /* Permet au header de rester fixe */
+    top: 0; 
+    z-index: 10; /* Détermine l'ordre des couches qui se chevauchent, ici 10 = couche intermediaire */
+}
+
+nav
+{
+    color: black; /* Couleur du texte rouge*/
+    border-bottom: 3px solid orange; /* Bordure de 3 pixel de couleur orange*/
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:white; /* Fond d'écran blanc */
+    padding:0; /* Remplissage */
+    margin:0; /* Marge */
+}
+
+nav a
+{
+    align-items: center; /* Centre les objets */
+    color: orange; /* Couleur orange */
+    font-size: 1.4rem;
+}
+
+li {
+    list-style:none; /* Pas de puce */
+    color: white; /* Fond d'écran blanc*/
+    padding:10px; /* Remplissage */
+    font-size:20px;
+    text-decoration:none; /* Enleve le surlignage */
+}
+     
+nav ul li {
+    list-style: none; /* Pas de puce */
+    line-height:44px;
+    float:left; /* Placé côté gauche */
+}
+
+nav ul li a {
+    color:black; /* Couleur noire */
+    padding:10px; /* Remplissage de 10 px */
+    font-size:20px;
+    margin-right: 80px; /* Marge de 80 pixel */
+}
+
+nav ul li ul {
+    display:none; /* Rend le menu déroulant caché par défaut */
+    width: 30%; /* Largeur */
+}
+     
+nav ul li:hover ul { /* S'affiche au passage de la souris */
+    z-index:99999; /* Détermine l'ordre des couches qui se chevauchent, ici 99999 = couche la plus haute */
+    display:list-item; /* Créer une liste */
+    position:absolute; 
+    margin-top:5px; /* Marge du haut */
+    margin-left:-10px; /* Marge à gauche */
+    }
+
+nav ul li:hover ul li {
+    float:none; /* Pas placé */
+}
+
+a
+{
+    text-decoration: none; /* Enleve le surlignage */
+    color: black; /* Couleur noire */
+    font-size: 1.2em;
+}
+
+a:hover
+{
+    text-decoration: underline; /* Surligne le texte, lorsque l'on passe la souris dessus */
+}
+
+main
+{
+    text-align: left; /* Texte aligné à gauche */
+    width: 100%; /* Largeur maximale */
+    max-width: 1200px; /* Largeur maximale de 1200 pixels */
+    margin: auto; /* Centre au milieu de la page */
+}
+
+div{
+    text-align: center; /* Texte centré */
+}
+
+span{
+    text-decoration: underline; /* Souligne le texte */
+    font-weight: bolder; /* Mets en gras le texte */
+}
+
+h1,h2,h3
+{
+    color: orange; /*  Couleur orange */
+    text-align: center; /* Texte centré */
+}
+
+ul
+{
+    list-style-type: none; /* Pas de puce */
+}
+
+aside{
+    font-size: 1.2em;
+    color: orange; /* Couleur orange */
+    font-style: italic; /* Mets le texte en Italic */
+}
+
+hr{
+    border-bottom: 2px solid orange; /* Bordure de 2 px de couleur orange */
+    display: block;
+    width: 200px; /* Largeur de 200 pixels */
+}
+
+iframe{
+    width: 100%; /* Largeur de 100% */
+    max-width: 1200px; /* Largeur maximale de 1200 pixels */
+    height: 400px; /* Hauteur de 400 pixels */
+    border: 0; /* Pas de bordure */
+}
+
+footer{
+    width: 100%; /* Largeur de 100% */
+    font-size: 1.4rem;
+    text-align: right; /* Texte aligné à droite */
+    background-color: white; /* Fond d'écran blanc pour le footer uniquement*/
+    color: black; /* Couleur noire */
+    margin: 0; /* Marge */
+    padding: 0; /* Remplissage */
+}
+
+video{
+    text-align: center;
+}
+
